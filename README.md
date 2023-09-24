@@ -41,11 +41,11 @@ git clone https://github.com/AlfarizaRasendria/SEA-Cinema-Compfest.git
 ```
 
 -   Switch to the repo folder
-        ```bash
+        ```
         cd GDSC-ITB-Last-Submission
         ```
 -   Install all the dependencies using composer
-        ```bash
+        ```
         composer install
         ```
 -   Open XAMPP Control Panel
@@ -54,7 +54,7 @@ git clone https://github.com/AlfarizaRasendria/SEA-Cinema-Compfest.git
 -   Create new Database name it with SEA_Cinema
 -   Open project directory
 -   Copy .env.example file to .env on the root folder
-        ```bash
+        ```
         cp .env.example .env
         ```
 -   Open your .env file and change the database name (DB_DATABASE) with SEA_Cinema
