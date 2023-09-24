@@ -28,32 +28,30 @@ use App\Http\Controllers\WithdrawalController;
 
 // Middleware Guest
 Route::middleware('guest')->group(function () {
-    // Landing
     Route::get('/', [SessionController::class, 'getLanding'])->name('getLanding');
-
-    // Get Authentication Page
     Route::get('/get/login', [SessionController::class, 'getLogin'])->name('getLogin');
     Route::get('/get/register', [SessionController::class, 'getRegist'])->name('getRegister');
-
-    // Authentication
     Route::post('/login', [UserController::class, 'login'])->name('Login');
     Route::post('/register', [UserController::class, 'register'])->name('Register');
-
-    // Movie
     Route::get('/all/movie', [MovieController::class, 'getAllMovie'])->name('getAllMovie');
-
-    //  Movie Detail
     Route::get('/movie/{id}', [MovieController::class, 'getDetailMovie'])->name('getDetailMovie');
+    Route::post('/movie/spesific', [MovieController::class, 'getSpesificMovie'])->name('getSpecificMovie');
+    Route::get('/movie/not/found', [MovieController::class, 'getMovieNotFound'])->name('getMovieNotFound');
 });
 
+
+// Middleware User
 Route::middleware('auth')->group(function () {
     Route::get('/home',[SessionController::class,'HomeAuth'])->name('getHomeAuth');
     Route::get('/user/logout', [UserController::class, 'logout'])->name('Logout');
-    Route::get('/user/dashboard', [DashboardController::class, 'getDashboard'])->name('getDashboard');
     Route::get('/user/order/{id}', [OrderController::class, 'getOrder'])->name('getOrder');
     Route::get('/user/orderHist', [OrderController::class, 'getOrderHist'])->name('getOrderHist');
     Route::get('/user/all/movie', [OrderController::class, 'getAllMovie'])->name('UserAllMovies');
     Route::get('/user/movie/{id}', [OrderController::class, 'getDetailMovie'])->name('UserDetailMovies');
+
+    Route::get('/user/dashboard', [DashboardController::class, 'getDashboard'])->name('getDashboard');
+    Route::post('/user/movie/spesific', [MovieController::class, 'UsergetSpesificMovie'])->name('UsergetSpecificMovie');
+    Route::get('user/movie/not/found', [MovieController::class, 'UsergetMovieNotFound'])->name('UsergetMovieNotFound');
 
     Route::get('/user/topUp', [TopUpController::class, 'getTopUp'])->name('getUserTopUp');
     Route::post('/user/add/topUp', [TopUpController::class, 'addTopUp'])->name('addUserTopUp');

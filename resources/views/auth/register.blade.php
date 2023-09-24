@@ -1,7 +1,7 @@
 @extends('layout.layout_guest_auth')
 @section('content')
     <div class="container-fluid main-section px-0 d-flex justify-content-center align-items-center my-4 row mx-0">
-        <div class=" container col-lg-4 col-md-8 col-10">
+        <div class=" container mt-5 col-lg-4 col-md-8 col-10">
             <h2 class="text-center fw-bold">Register</h2>
             @if ($errors->has('Failed'))
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">

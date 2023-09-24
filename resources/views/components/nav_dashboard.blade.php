@@ -1,4 +1,4 @@
-<nav id="nav" class="navbar navbar-expand-lg navbar-dark text-light bg-dark h-auto z-1">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark text-light bg-dark h-auto z-1">
     <div class="container-fluid">
         <img src="{{ asset('images/Logo.png') }}" class="navbar-brand object-fit-cover" href="#">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

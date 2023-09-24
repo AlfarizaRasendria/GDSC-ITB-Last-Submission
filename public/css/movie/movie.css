@@ -1,11 +1,26 @@
 .movie-border {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 }
 
 .movie-bg {
-    background-color: #000080;
+    /* background-color: #000080; */
+    background-color: #B1CCE5;
 }
 
 .detail-movie-bg {
     background-color: black;
+}
+
+.arrow-back-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.button-order{
+    background-color: #FF6600;
+}
+
+.button-order:hover{
+    background-color: #FF6600;
 }

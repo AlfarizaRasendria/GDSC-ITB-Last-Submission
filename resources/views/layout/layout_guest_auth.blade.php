@@ -9,10 +9,11 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/guest/guest.css') }}">
     <link rel="stylesheet" href="{{ asset('css/env/env.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/auth/auth.css') }}">
 </head>
 
 <body>
-    <div class="container-fluid auth-form min-vh-100 m-0 overflow-y-hidden">
+    <div class="container-fluid auth-form min-vh-100 m-0 overflow-y-hidden auth-background">
         @include('components.nav_landing')
 
         @yield('content')

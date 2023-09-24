@@ -11,6 +11,7 @@
             @endif
 
             <h2 class="mb-4">Select your seats</h2>
+            <h6 class="mb-4">You can select a maximum of 6 seats</h6>
             <div class="cinema-vis-container d-flex flex-column justify-content-center align-items-center">
                 <p>Cinema Screen</p>
             </div>
@@ -66,7 +67,7 @@
                             placeholder="List of Selected Seat" readonly>
                     </div>
                     <div class="row my-3">
-                        <label for="quantity" class=" me-3 col-auto">Quantity of selected seat :</label>
+                        <label for="quantity" class=" me-3 col-auto">Quantity of selected seat (max 6 seats) : </label>
                         <input type="number" id="quantity" name="quantity" class="form-control col-auto "
                             placeholder="Quantity of selected seat" readonly>
                     </div>

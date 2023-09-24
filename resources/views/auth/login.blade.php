@@ -2,7 +2,6 @@
 @section('content')
     <div
         class="container-fluid auth-form main-section-login  px-0 d-flex justify-content-center align-items-center row mx-0 vh-100">
-
         <div class="container col-lg-4 col-md-8 col-10">
             @if (session('Success'))
                 <div class="alert alert-success text-center dismissible fade show h-auto d-flex justify-content-between"

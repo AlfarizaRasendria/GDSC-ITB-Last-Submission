@@ -16,7 +16,6 @@
     <div class="container-fluid">
         <div class="row">
             @include('components.sidebar_user')
-
             <div
                 class=" container-fluid col-10 col-sm-8 col-lg-9 col-md-9 col-xl-10 offset-xl-2 offset-md-3 offset-lg-3 offset-sm-4 offset-2 pt-4 px-3 row p-4 gap-4 movie-bg">
                 @yield('content')
