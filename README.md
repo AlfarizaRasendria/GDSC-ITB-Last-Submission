@@ -41,16 +41,16 @@ git clone https://github.com/AlfarizaRasendria/SEA-Cinema-Compfest.git
 ```
 
 -   Switch to the repo folder
-        cd laravel-realworld-example-app
+        ```cd GDSC-ITB-Last-Submission```
 -   Install all the dependencies using composer
-        composer install
+        ```composer install```
 -   Open XAMPP Control Panel
 -   Start Apache and MySQL
 -   Click on Admin Button inline with MySQL
 -   Create new Database name it with SEA_Cinema
 -   Open project directory
 -   Copy .env.example file to .env on the root folder
-        cp .env.example .env
+        ```cp .env.example .env```
 -   Open your .env file and change the database name (DB_DATABASE) with SEA_Cinema
 -   Open your cmd or terminal
 -   Run php artisan key:generate
