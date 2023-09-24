@@ -40,18 +40,20 @@ There are two users on this website namely guest and user
 git clone https://github.com/AlfarizaRasendria/SEA-Cinema-Compfest.git
 ```
 
--   Go to the folder application using cd command on your cmd or terminal
--   Run composer install on your cmd or terminal
+-   Switch to the repo folder
+        cd laravel-realworld-example-app
+-   Install all the dependencies using composer
+        composer install
 -   Open XAMPP Control Panel
 -   Start Apache and MySQL
 -   Click on Admin Button inline with MySQL
 -   Create new Database name it with SEA_Cinema
 -   Open project directory
--   Copy .env.example file to .env on the root folder. You can type copy .env.example .env if using command  
-    prompt Windows or cp .env.example .env if using terminal, Ubuntu
+-   Copy .env.example file to .env on the root folder
+        cp .env.example .env
 -   Open your .env file and change the database name (DB_DATABASE) with SEA_Cinema
 -   Open your cmd or terminal
 -   Run php artisan key:generate
 -   Run php artisan migrate
--   Run php artisan serve
--   Go to http://localhost:8000/
+-   Start the local development server php artisan serve
+-   You can now access the server at http://localhost:8000
