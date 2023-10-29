@@ -16,7 +16,7 @@
                 <button type="button" class="ms-3 btn-close" data-bs-dismiss="alert" aria-label="close"></button>
             </div>
         @endif
-        <div class="container row gap-5 d-flex justify-content-center">
+        <div class="container row gap-5 d-flex justify-content-center mt-5">
             <h2 class="text-center">Dashboard</h2>
             <div class="col-auto bg-danger rounded p-4">
                 <h4 class="text-light">Total Ticket Booked</h4>
